@@ -24,7 +24,7 @@ def main():
                 generate_report()
             elif choice == 5:
                 print("Thank you for using the Digital Marketing Business App!")
-                break  # Exit the program
+                break
             else:
                 print("Invalid choice. Please select a valid option.")
         except ValueError:
