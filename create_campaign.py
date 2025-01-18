@@ -7,18 +7,15 @@ def create_campaign():
         campaign_id = int(input("Enter campaign ID: "))
         client_id = int(input("Enter client ID: "))
 
-        # Check if the client exists
         if client_id not in clients:
             print(f"No client found with ID {client_id}.")
             return
 
-        # Input campaign details
         campaign_name = input("Enter campaign name: ")
         impressions = int(input("Enter initial impressions: "))
         clicks = int(input("Enter initial clicks: "))
         conversions = int(input("Enter initial conversions: "))
 
-        # Store the campaign
         campaigns[campaign_id] = {
             "client_id": client_id,
             "campaign_name": campaign_name,
